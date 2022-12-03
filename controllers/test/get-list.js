@@ -1,6 +1,7 @@
 
-const getList =  (req, res) => {
-  const data = ["test 1", "test 2"];
+const {Student} = require("../../database/models")
+const getList = async (req, res) => {
+  const data = await Student.findAll()
   res.send({
     data,
   });

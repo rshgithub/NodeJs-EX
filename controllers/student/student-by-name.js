@@ -1,4 +1,4 @@
-const Students = require('./../../Models/student');
+const {Student} = require("../../database/models")
 
 const getStudentByName = async (req, res) => {
     const data = await Students.findOne({
