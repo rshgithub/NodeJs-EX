@@ -1,3 +1,4 @@
+const Students = require('./../../Models/student');
 
 const getStudentByName = async (req, res) => {
     const data = await Students.findOne({
